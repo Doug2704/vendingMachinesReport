@@ -14,7 +14,7 @@ public class Sale {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int saleId;
+    private long saleId;
 
     @OneToMany(mappedBy = "sales")
     private List<Product> products;
